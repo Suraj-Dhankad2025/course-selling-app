@@ -4,7 +4,7 @@ const router = express.Router();
 
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
-
+app.use('/', Login);
 app.use('user', User);
 app.use('admin', Admin);
 const app = express();
